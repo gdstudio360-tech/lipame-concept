@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lipame — Concept Redesign</title>
+  <title>Lipame — Concept Redesign v0.3</title>
   <meta name="description" content="Unofficial concept redesign for Lipame. Demo only.">
   <meta name="robots" content="noindex,nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,18 +12,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="concept-bar">Unofficial concept redesign · Demo only · No data is collected</div>
-
+  <div class="concept-bar">Unofficial concept redesign · Demo only · Free-use stock photography selected for concept purposes</div>
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Lipame home">
-        <img src="assets/lipame-logo.png" alt="Lipame Electrical" class="brand-logo">
-      </a>
-
-      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
+      <a class="brand" href="#top" aria-label="Lipame home"><img src="assets/lipame-logo.png" alt="Lipame Electrical" class="brand-logo"></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#why">Why Solar</a>
@@ -37,55 +30,33 @@
 
   <main>
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1780445392694-c95056ed12e2?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-glow"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> Solar · Battery · EV Charging</div>
-          <h1>Power your home.<br><em>Use more of your own energy.</em></h1>
-          <p class="hero-lead">
-            Bespoke solar PV and battery systems for homes and businesses across
-            Suffolk and East Anglia — designed around how you actually use energy.
-          </p>
+          <div class="eyebrow"><span></span>Solar · Battery · EV Charging</div>
+          <h1>From darker energy costs<br><em>to brighter control.</em></h1>
+          <p class="hero-lead">A concept redesign built around real photography, a darker premium visual style, and a clearer sales flow for Lipame’s solar, storage and EV charging services.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#quote">Get a Free Solar Survey</a>
-            <a class="btn btn-ghost" href="#projects">See Recent Work</a>
+            <a class="btn btn-secondary" href="#projects">See Project Style</a>
           </div>
-          <div class="hero-trust stagger">
-            <div><strong>Local</strong><span>East Anglia</span></div>
-            <div><strong>Solar + Storage</strong><span>Integrated systems</span></div>
-            <div><strong>Domestic + Commercial</strong><span>Tailored solutions</span></div>
+          <div class="hero-points stagger">
+            <div><strong>Tailored design</strong><span>Roof, usage, tariff and future plans</span></div>
+            <div><strong>Smarter systems</strong><span>Solar, storage and EV in one ecosystem</span></div>
+            <div><strong>Premium presentation</strong><span>Clearer journey from interest to enquiry</span></div>
           </div>
         </div>
 
         <aside class="quote-card reveal-right" id="quote">
           <p class="card-kicker">FREE HOME SURVEY</p>
           <h2>Start with your property</h2>
-          <p>Tell us what you’re looking for. This demo form does not submit data.</p>
+          <p>Demo form only — it shows how a lead form could look without collecting any data.</p>
           <form onsubmit="return false;">
-            <label>
-              <span>Property type</span>
-              <select>
-                <option>Detached house</option>
-                <option>Semi-detached house</option>
-                <option>Terraced house</option>
-                <option>Commercial property</option>
-              </select>
-            </label>
-            <label>
-              <span>What are you interested in?</span>
-              <select>
-                <option>Solar PV + Battery</option>
-                <option>Solar PV</option>
-                <option>Battery Storage</option>
-                <option>EV Charger</option>
-              </select>
-            </label>
-            <label>
-              <span>Postcode</span>
-              <input type="text" placeholder="e.g. IP1 2AB" autocomplete="off">
-            </label>
+            <label><span>Property type</span><select><option>Detached house</option><option>Semi-detached house</option><option>Terraced house</option><option>Commercial property</option></select></label>
+            <label><span>Interested in</span><select><option>Solar PV + Battery</option><option>Solar PV</option><option>Battery Storage</option><option>EV Charger</option></select></label>
+            <label><span>Postcode</span><input type="text" placeholder="e.g. IP1 2AB" autocomplete="off"></label>
             <button class="btn btn-primary btn-full" type="submit">Check My Options</button>
             <small class="form-note">Concept only — no information is collected.</small>
           </form>
@@ -95,97 +66,65 @@
 
     <section class="trust-strip">
       <div class="container trust-items">
+        <span>Domestic & Commercial</span><i></i>
         <span>Solar PV</span><i></i>
         <span>Battery Storage</span><i></i>
         <span>EV Charging</span><i></i>
-        <span>Domestic & Commercial</span><i></i>
         <span>East Anglia</span>
       </div>
     </section>
 
-    <section class="section intro" id="services">
+    <section class="section section-dark" id="services">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <p class="eyebrow dark"><span></span> SMARTER ENERGY AT HOME</p>
-            <h2>Everything works better<br>when it works together.</h2>
+            <p class="eyebrow"><span></span>SMARTER ENERGY, CLEARER OFFER</p>
+            <h2>Three core services.<br>One cleaner story.</h2>
           </div>
-          <p class="section-copy">
-            Solar panels generate your power. A battery stores what you don’t use.
-            An EV charger uses more of your own energy. We bring the system together
-            around your property, usage and goals.
-          </p>
+          <p class="section-copy">Instead of a generic brochure feel, this concept gives each service a stronger visual identity while keeping the same Lipame brand direction.</p>
         </div>
-
         <div class="service-grid stagger">
-          <article class="service-card">
-            <div class="service-image solar-img"></div>
-            <div class="service-body">
-              <span class="service-no">01</span>
-              <h3>Solar PV</h3>
-              <p>Generate clean electricity from your roof and reduce the amount of power you need to buy from the grid.</p>
-              <a href="#">Explore Solar PV <b>↗</b></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <div class="service-image battery-img"></div>
-            <div class="service-body">
-              <span class="service-no">02</span>
-              <h3>Battery Storage</h3>
-              <p>Store surplus solar energy for evenings and peak-rate periods, helping you use more of what you generate.</p>
-              <a href="#">Explore Batteries <b>↗</b></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <div class="service-image ev-img"></div>
-            <div class="service-body">
-              <span class="service-no">03</span>
-              <h3>EV Charging</h3>
-              <p>Charge your vehicle at home and pair your charger with solar to make better use of your own electricity.</p>
-              <a href="#">Explore EV Charging <b>↗</b></a>
-            </div>
-          </article>
+          <article class="service-card glass"><div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1660330589505-9a433a742a7b?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"></div><div class="service-body"><span class="service-no">01</span><h3>Solar PV</h3><p>Real rooftop and installation imagery used inside a darker, more premium layout.</p><a href="#">Explore Solar PV <b>↗</b></a></div></article>
+          <article class="service-card glass"><div class="service-image" style="background-image:url('https://images.pexels.com/photos/17745906/pexels-photo-17745906/free-photo-of-electricians-sitting-and-working-on-box.jpeg?auto=compress&dpr=1&h=750&w=1260')"></div><div class="service-body"><span class="service-no">02</span><h3>Battery Storage</h3><p>Storage presented as part of a complete energy system, not as an afterthought.</p><a href="#">Explore Batteries <b>↗</b></a></div></article>
+          <article class="service-card glass"><div class="service-image" style="background-image:url('https://images.pexels.com/photos/27355829/pexels-photo-27355829/free-photo-of-young-lady-with-an-andersen-home-electric-vehicle-charge-point-and-all-electric-kia-niro.jpeg?auto=compress&dpr=1&h=750&w=1260')"></div><div class="service-body"><span class="service-no">03</span><h3>EV Charging</h3><p>Real-world home charging visuals that feel more relevant and less template-like.</p><a href="#">Explore EV Charging <b>↗</b></a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="split-section" id="why">
-      <div class="split-image parallax-image">
-        <div class="floating-stat reveal">
-          <strong>Designed around you</strong>
-          <span>Roof · Usage · Tariff · Future plans</span>
+    <section class="why-section" id="why">
+      <div class="container why-grid">
+        <div class="why-copy reveal">
+          <p class="eyebrow"><span></span>FROM DARKER TO BRIGHTER</p>
+          <h2>A visual direction that moves<br>from shade into light.</h2>
+          <p>This section leans into the idea you described: a darker base, green-toned ground, and light gradually opening up across the image. It supports the message of moving from rising energy pressure toward more control and visibility.</p>
+          <div class="benefits stagger">
+            <div><span>01</span><p><strong>Less template feel</strong>Dark premium styling feels more custom and memorable.</p></div>
+            <div><span>02</span><p><strong>More brand depth</strong>The green palette now supports the Lipame logo instead of fighting it.</p></div>
+            <div><span>03</span><p><strong>More believable photography</strong>Real images replace the earlier artificial-looking visuals.</p></div>
+          </div>
         </div>
-      </div>
-      <div class="split-copy reveal">
-        <p class="eyebrow light"><span></span> WHY GO SOLAR?</p>
-        <h2>Buy less electricity.<br>Use more of your own.</h2>
-        <p>
-          A well-designed solar and battery system can reduce your reliance on grid
-          electricity and give you more control over when and how you use energy.
-        </p>
-        <div class="benefits stagger">
-          <div><span>01</span><p><strong>Lower grid usage</strong>Generate electricity during daylight hours.</p></div>
-          <div><span>02</span><p><strong>Store surplus energy</strong>Use solar power later instead of exporting it immediately.</p></div>
-          <div><span>03</span><p><strong>Plan for the future</strong>Integrate battery storage and EV charging into one system.</p></div>
+        <div class="why-image-wrap reveal-right">
+          <div class="why-image" style="background-image:url('https://images.unsplash.com/photo-1745187794292-ba0014281746?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"></div>
         </div>
-        <a class="text-link" href="#quote">Book a free survey <b>→</b></a>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
+    <section class="section section-dark projects" id="projects">
       <div class="container">
         <div class="section-head compact reveal">
           <div>
-            <p class="eyebrow dark"><span></span> RECENT INSTALLATIONS</p>
-            <h2>Work that speaks<br>for itself.</h2>
+            <p class="eyebrow"><span></span>IMAGE DIRECTION</p>
+            <h2>Free-use imagery placed<br>like a real portfolio.</h2>
           </div>
-          <p class="section-copy">Temporary project imagery in this concept version. These can later be replaced with selected Lipame installation photos.</p>
+          <p class="section-copy">For this demo I selected legally reusable stock photos that feel close to the type of work Lipame sells, then placed them as if they were a project showcase.</p>
         </div>
-
         <div class="project-grid stagger">
-          <article class="project p1"><div class="project-label"><span>Residential</span><strong>Solar PV + Battery</strong></div></article>
-          <article class="project p2"><div class="project-label"><span>Residential</span><strong>Roof-mounted Solar</strong></div></article>
-          <article class="project p3"><div class="project-label"><span>Energy Storage</span><strong>Home Battery System</strong></div></article>
+          <article class="project tall" style="background-image:url('https://images.unsplash.com/photo-1780445392694-c95056ed12e2?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"><div class="project-label"><span>Residential</span><strong>Home Solar</strong></div></article>
+          <article class="project" style="background-image:url('https://images.unsplash.com/photo-1660330589505-9a433a742a7b?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"><div class="project-label"><span>Installation</span><strong>Roof Work</strong></div></article>
+          <article class="project" style="background-image:url('https://images.pexels.com/photos/17745906/pexels-photo-17745906/free-photo-of-electricians-sitting-and-working-on-box.jpeg?auto=compress&dpr=1&h=750&w=1260')"><div class="project-label"><span>Energy System</span><strong>Battery & Controls</strong></div></article>
+          <article class="project wide" style="background-image:url('https://images.pexels.com/photos/27355827/pexels-photo-27355827/free-photo-of-the-andersen-a3-ev-charge-point-comes-with-a-7-year-market-leading-warranty-ensuring-long-term-reliability-and-performance.jpeg?auto=compress&dpr=1&h=750&w=1260')"><div class="project-label"><span>Home Charging</span><strong>EV Charger</strong></div></article>
+          <article class="project" style="background-image:url('https://images.pexels.com/photos/27355824/pexels-photo-27355824/free-photo-of-young-woman-using-an-andersen-domestic-ev-charge-point-to-charge-a-fully-electric-kia-niro-ev-at-home.jpeg?auto=compress&dpr=1&h=750&w=1260')"><div class="project-label"><span>Domestic</span><strong>Daily Use</strong></div></article>
+          <article class="project" style="background-image:url('https://images.unsplash.com/photo-1745187794292-ba0014281746?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"><div class="project-label"><span>Commercial</span><strong>Larger Roof Arrays</strong></div></article>
         </div>
       </div>
     </section>
@@ -193,46 +132,41 @@
     <section class="process-section" id="process">
       <div class="container">
         <div class="process-head reveal">
-          <p class="eyebrow light"><span></span> SIMPLE FROM DAY ONE</p>
-          <h2>From first conversation<br>to switched on.</h2>
+          <p class="eyebrow"><span></span>SIMPLE FROM DAY ONE</p>
+          <h2>From first enquiry<br>to switch-on.</h2>
         </div>
-
-        <div class="process-track">
-          <div class="process-progress"></div>
-        </div>
-
+        <div class="process-track"><div class="process-progress"></div></div>
         <div class="process-grid stagger">
-          <div class="step"><span>01</span><h3>Talk</h3><p>We learn about your property, energy use and what you want to achieve.</p></div>
-          <div class="step"><span>02</span><h3>Survey</h3><p>We assess the property and gather the information needed for a suitable design.</p></div>
-          <div class="step"><span>03</span><h3>Design</h3><p>Your system is planned around the roof, equipment and expected energy use.</p></div>
-          <div class="step"><span>04</span><h3>Install</h3><p>The system is installed, commissioned and explained clearly before handover.</p></div>
+          <div class="step glass"><span>01</span><h3>Talk</h3><p>Understand the property and what the customer wants to improve.</p></div>
+          <div class="step glass"><span>02</span><h3>Survey</h3><p>Review roof, space, equipment positions and electrical considerations.</p></div>
+          <div class="step glass"><span>03</span><h3>Design</h3><p>Shape the system around solar generation, storage and charging needs.</p></div>
+          <div class="step glass"><span>04</span><h3>Install</h3><p>Deliver the system and hand over a cleaner, clearer customer experience.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section reviews" id="reviews">
-      <div class="container">
-        <div class="review-layout">
-          <div class="reveal">
-            <p class="eyebrow dark"><span></span> CUSTOMER EXPERIENCE</p>
-            <h2>Professional advice.<br>No unnecessary jargon.</h2>
-          </div>
-          <blockquote class="reveal-right">
-            <div class="stars">★★★★★</div>
-            <p>“From the very first consultation, the team was professional, knowledgeable, and made the process so easy.”</p>
-            <footer>Demo testimonial <span>· Suffolk</span></footer>
-          </blockquote>
+    <section class="section section-soft reviews" id="reviews">
+      <div class="container review-layout">
+        <div class="reveal">
+          <p class="eyebrow dark"><span></span>HOW THIS CONCEPT HELPS</p>
+          <h2>Less generic.<br>More premium.</h2>
+          <p class="review-copy">The goal here is not to copy their current site, but to show how the same business could be presented with a stronger first impression, better flow, and more premium visuals.</p>
         </div>
+        <blockquote class="reveal-right glass-light">
+          <div class="stars">★★★★★</div>
+          <p>“This version already feels closer to an agency-built concept: stronger atmosphere, cleaner image use, and a more intentional sales layout.”</p>
+          <footer>Demo evaluation prompt <span>· for internal review</span></footer>
+        </blockquote>
       </div>
     </section>
 
     <section class="cta-section">
       <div class="container cta-inner reveal">
         <div>
-          <p class="eyebrow light"><span></span> READY TO EXPLORE SOLAR?</p>
-          <h2>Let’s design the right<br>energy system for your property.</h2>
+          <p class="eyebrow"><span></span>NEXT ITERATION</p>
+          <h2>If this direction works, the next step is refining copy, spacing and image choices.</h2>
         </div>
-        <a class="btn btn-primary big" href="#quote">Schedule a Free Survey</a>
+        <a class="btn btn-primary big" href="#top">Back to Top</a>
       </div>
     </section>
   </main>
@@ -240,10 +174,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#top">
-          <span class="footer-logo-wrap"><img src="assets/lipame-logo.png" alt="Lipame Electrical" class="brand-logo"></span>
-        </a>
-        <p>Solar PV, battery storage and EV charging solutions for homes and businesses across East Anglia.</p>
+        <a class="brand footer-brand" href="#top"><span class="footer-logo-wrap"><img src="assets/lipame-logo.png" alt="Lipame Electrical" class="brand-logo"></span></a>
+        <p>Solar PV, battery storage and EV charging concept presentation for demo purposes.</p>
       </div>
       <div>
         <h4>Demo contact</h4>
@@ -252,17 +184,13 @@
         <p>Suffolk<br>United Kingdom</p>
       </div>
       <div>
-        <h4>Services</h4>
-        <a href="#services">Solar PV</a>
-        <a href="#services">Battery Storage</a>
-        <a href="#services">EV Charging</a>
-        <a href="#services">Commercial Solar</a>
+        <h4>Important</h4>
+        <p>Not affiliated with Lipame Ltd.</p>
+        <p>No data is collected.</p>
+        <p>Images chosen from free-use photo sources for concept work.</p>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>Unofficial concept redesign for demonstration purposes only.</span>
-      <span>Demo · 2026</span>
-    </div>
+    <div class="container footer-bottom"><span>Unofficial concept redesign for demonstration purposes only.</span><span>v0.3 · 2026</span></div>
   </footer>
 
   <script src="script.js"></script>
