@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lipame Solar — Concept Redesign</title>
+  <meta name="description" content="Unofficial concept redesign for Lipame Solar — solar PV, battery storage and EV charging in Suffolk and East Anglia.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="concept-bar">
+    Unofficial concept redesign · Not affiliated with Lipame Ltd
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Lipame Solar home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="ray r1"></span><span class="ray r2"></span><span class="ray r3"></span>
+        </span>
+        <span class="brand-copy">
+          <strong>LIPAME</strong>
+          <small>SOLAR</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#why">Why Solar</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a class="nav-cta" href="#quote">Get a Free Survey</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Solar · Battery · EV Charging</div>
+          <h1>Power your home.<br><em>Keep more of your energy.</em></h1>
+          <p class="hero-lead">
+            Bespoke solar PV and battery systems for homes and businesses across
+            Suffolk and East Anglia — designed around how you actually use energy.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quote">Get a Free Solar Survey</a>
+            <a class="btn btn-ghost" href="#projects">See Recent Work</a>
+          </div>
+          <div class="hero-trust">
+            <div><strong>Local</strong><span>Ipswich based</span></div>
+            <div><strong>10+ yrs</strong><span>Established business</span></div>
+            <div><strong>Solar + Storage</strong><span>One integrated system</span></div>
+          </div>
+        </div>
+
+        <aside class="quote-card" id="quote">
+          <p class="card-kicker">FREE HOME SURVEY</p>
+          <h2>Start with your property</h2>
+          <p>Tell us what you’re looking for. This demo form does not submit data.</p>
+          <form onsubmit="return false;">
+            <label>
+              <span>Property type</span>
+              <select>
+                <option>Detached house</option>
+                <option>Semi-detached house</option>
+                <option>Terraced house</option>
+                <option>Commercial property</option>
+              </select>
+            </label>
+            <label>
+              <span>What are you interested in?</span>
+              <select>
+                <option>Solar PV + Battery</option>
+                <option>Solar PV</option>
+                <option>Battery Storage</option>
+                <option>EV Charger</option>
+              </select>
+            </label>
+            <label>
+              <span>Postcode</span>
+              <input type="text" placeholder="e.g. IP8 4BZ" autocomplete="off">
+            </label>
+            <button class="btn btn-primary btn-full" type="submit">Check My Options</button>
+            <small class="form-note">Concept only — no information is collected.</small>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-items">
+        <span>Solar PV</span>
+        <i></i>
+        <span>Battery Storage</span>
+        <i></i>
+        <span>EV Charging</span>
+        <i></i>
+        <span>Domestic & Commercial</span>
+        <i></i>
+        <span>East Anglia</span>
+      </div>
+    </section>
+
+    <section class="section intro" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow dark"><span></span> SMARTER ENERGY AT HOME</p>
+            <h2>Everything works better<br>when it works together.</h2>
+          </div>
+          <p class="section-copy">
+            Solar panels generate your power. A battery stores what you don’t use.
+            An EV charger uses more of your own energy. We bring the system together
+            around your property, usage and goals.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured">
+            <div class="service-image solar-img"></div>
+            <div class="service-body">
+              <span class="service-no">01</span>
+              <h3>Solar PV</h3>
+              <p>Generate clean electricity from your roof and reduce the amount of power you need to buy from the grid.</p>
+              <a href="#">Explore Solar PV <b>↗</b></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image battery-img"></div>
+            <div class="service-body">
+              <span class="service-no">02</span>
+              <h3>Battery Storage</h3>
+              <p>Store surplus solar energy for evenings and peak-rate periods, helping you use more of what you generate.</p>
+              <a href="#">Explore Batteries <b>↗</b></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image ev-img"></div>
+            <div class="service-body">
+              <span class="service-no">03</span>
+              <h3>EV Charging</h3>
+              <p>Charge your vehicle at home and pair your charger with solar to make better use of your own electricity.</p>
+              <a href="#">Explore EV Charging <b>↗</b></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section" id="why">
+      <div class="split-image">
+        <div class="floating-stat">
+          <strong>Designed around you</strong>
+          <span>Roof · Usage · Tariff · Future plans</span>
+        </div>
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow light"><span></span> WHY GO SOLAR?</p>
+        <h2>Buy less electricity.<br>Use more of your own.</h2>
+        <p>
+          A well-designed solar and battery system can reduce your reliance on grid
+          electricity and give you more control over when and how you use energy.
+        </p>
+        <div class="benefits">
+          <div><span>01</span><p><strong>Lower grid usage</strong>Generate electricity during daylight hours.</p></div>
+          <div><span>02</span><p><strong>Store surplus energy</strong>Use solar power later instead of exporting it immediately.</p></div>
+          <div><span>03</span><p><strong>Plan for the future</strong>Integrate battery storage and EV charging into one system.</p></div>
+        </div>
+        <a class="text-link" href="#quote">Book a free survey <b>→</b></a>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow dark"><span></span> RECENT INSTALLATIONS</p>
+            <h2>Work that speaks<br>for itself.</h2>
+          </div>
+          <p class="section-copy">Temporary project images in this first concept version. We’ll replace these with Lipame’s own installation photography next.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project p1">
+            <div class="project-label"><span>Residential</span><strong>Solar PV + Battery</strong></div>
+          </article>
+          <article class="project p2">
+            <div class="project-label"><span>Residential</span><strong>Roof-mounted Solar</strong></div>
+          </article>
+          <article class="project p3">
+            <div class="project-label"><span>Energy Storage</span><strong>Home Battery System</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="process-head">
+          <p class="eyebrow light"><span></span> SIMPLE FROM DAY ONE</p>
+          <h2>From first conversation<br>to switched on.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="step"><span>01</span><h3>Talk</h3><p>We learn about your home, energy use and what you want to achieve.</p></div>
+          <div class="step"><span>02</span><h3>Survey</h3><p>We assess the property and gather the information needed for a suitable design.</p></div>
+          <div class="step"><span>03</span><h3>Design</h3><p>Your system is planned around the roof, equipment and expected energy use.</p></div>
+          <div class="step"><span>04</span><h3>Install</h3><p>The system is installed, commissioned and explained clearly before handover.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="review-layout">
+          <div>
+            <p class="eyebrow dark"><span></span> CUSTOMER EXPERIENCE</p>
+            <h2>Professional advice.<br>No unnecessary jargon.</h2>
+          </div>
+          <blockquote>
+            <div class="stars">★★★★★</div>
+            <p>“From the very first consultation, the team was professional, knowledgeable, and made the process so easy.”</p>
+            <footer>John & Sarah T. <span>· Ipswich</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow light"><span></span> READY TO EXPLORE SOLAR?</p>
+          <h2>Let’s design the right<br>energy system for your property.</h2>
+        </div>
+        <a class="btn btn-primary big" href="#quote">Schedule a Free Survey</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><span class="sun"></span><span class="ray r1"></span><span class="ray r2"></span><span class="ray r3"></span></span>
+          <span class="brand-copy"><strong>LIPAME</strong><small>SOLAR</small></span>
+        </a>
+        <p>Solar PV, battery storage and EV charging solutions for homes and businesses across East Anglia.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:01473677293">01473 677 293</a>
+        <a href="mailto:info@lipame.co.uk">info@lipame.co.uk</a>
+        <p>Acorn Business Centre<br>Paper Mill Lane, Bramford<br>Ipswich, IP8 4BZ</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Solar PV</a>
+        <a href="#services">Battery Storage</a>
+        <a href="#services">EV Charging</a>
+        <a href="#services">Commercial Solar</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>Concept redesign for demonstration purposes only.</span>
+      <span>© 2026 Concept</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
