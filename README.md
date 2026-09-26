@@ -1,4 +1,4 @@
-# Lipame Concept Redesign — v0.5
+# Lipame Concept Redesign — v0.6
 
 Unofficial demo redesign.
 
@@ -24,3 +24,5 @@ Unofficial demo redesign.
 ## Important
 This is an unofficial concept redesign and is not affiliated with Lipame Ltd.
 This form is demo-only and collects no data.
+
+- v0.6 restores and strengthens scroll-linked animation, parallax, stagger reveals and hover motion.
