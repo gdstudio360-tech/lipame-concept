@@ -1,4 +1,4 @@
-# Lipame Concept Redesign — v0.6
+# Lipame Concept Redesign — v0.7
 
 Unofficial demo redesign.
 
@@ -25,4 +25,6 @@ Unofficial demo redesign.
 This is an unofficial concept redesign and is not affiliated with Lipame Ltd.
 This form is demo-only and collects no data.
 
-- v0.6 restores and strengthens scroll-linked animation, parallax, stagger reveals and hover motion.
+- v0.7 restores and strengthens scroll-linked animation, parallax, stagger reveals and hover motion.
+
+- v0.7 rebuilt the hero: shorter copy, dark glass enquiry form, simplified trust bar, stronger dark-to-light composition and reduced logo glow.

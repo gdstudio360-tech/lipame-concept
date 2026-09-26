@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lipame — Concept Redesign v0.6</title>
+  <title>Lipame — Concept Redesign v0.7</title>
   <meta name="description" content="Unofficial concept redesign for Lipame. Demo only.">
   <meta name="robots" content="noindex,nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,47 +30,77 @@
 
   <main>
     <section class="hero">
-      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1780445392694-c95056ed12e2?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000')"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-glow"></div>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span>Solar · Battery · EV Charging</div>
-          <h1>From darker energy costs<br><em>to brighter control.</em></h1>
-          <p class="hero-lead">A concept redesign built around real photography, a darker premium visual style, and a clearer sales flow for Lipame’s solar, storage and EV charging services.</p>
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span></span> SOLAR · BATTERY · EV CHARGING</div>
+          <h1>Power your home.<br><em>Use more of your own energy.</em></h1>
+          <p class="hero-lead">
+            Solar PV, battery storage and EV charging for homes and businesses
+            across Suffolk and East Anglia.
+          </p>
+
           <div class="hero-actions">
             <a class="btn btn-primary" href="#quote">Get a Free Solar Survey</a>
-            <a class="btn btn-secondary" href="#projects">See Project Style</a>
-          </div>
-          <div class="hero-points stagger">
-            <div><strong>Tailored design</strong><span>Roof, usage, tariff and future plans</span></div>
-            <div><strong>Smarter systems</strong><span>Solar, storage and EV in one ecosystem</span></div>
-            <div><strong>Premium presentation</strong><span>Clearer journey from interest to enquiry</span></div>
+            <a class="btn btn-secondary" href="#projects">View Recent Work</a>
           </div>
         </div>
 
-        <aside class="quote-card reveal-right" id="quote">
+        <aside class="quote-card quote-card-dark reveal-right" id="quote">
           <p class="card-kicker">FREE HOME SURVEY</p>
           <h2>Start with your property</h2>
-          <p>Demo form only — it shows how a lead form could look without collecting any data.</p>
+          <p>See how a quick enquiry could begin. Demo only — no data is collected.</p>
+
           <form onsubmit="return false;">
-            <label><span>Property type</span><select><option>Detached house</option><option>Semi-detached house</option><option>Terraced house</option><option>Commercial property</option></select></label>
-            <label><span>Interested in</span><select><option>Solar PV + Battery</option><option>Solar PV</option><option>Battery Storage</option><option>EV Charger</option></select></label>
-            <label><span>Postcode</span><input type="text" placeholder="e.g. IP1 2AB" autocomplete="off"></label>
+            <label>
+              <span>Property type</span>
+              <select>
+                <option>Detached house</option>
+                <option>Semi-detached house</option>
+                <option>Terraced house</option>
+                <option>Commercial property</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Interested in</span>
+              <select>
+                <option>Solar PV + Battery</option>
+                <option>Solar PV</option>
+                <option>Battery Storage</option>
+                <option>EV Charger</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Postcode</span>
+              <input type="text" placeholder="e.g. IP1 2AB" autocomplete="off">
+            </label>
+
             <button class="btn btn-primary btn-full" type="submit">Check My Options</button>
             <small class="form-note">Concept only — no information is collected.</small>
           </form>
         </aside>
       </div>
-    </section>
 
-    <section class="trust-strip">
-      <div class="container trust-items">
-        <span>Domestic & Commercial</span><i></i>
-        <span>Solar PV</span><i></i>
-        <span>Battery Storage</span><i></i>
-        <span>EV Charging</span><i></i>
-        <span>East Anglia</span>
+      <div class="hero-trustbar">
+        <div class="container hero-trustbar-inner">
+          <div class="hero-services">
+            <span>Solar PV</span><i></i>
+            <span>Battery Storage</span><i></i>
+            <span>EV Charging</span><i></i>
+            <span>Domestic & Commercial</span>
+          </div>
+          <div class="hero-badges">
+            <span>NICEIC</span>
+            <span>MCS</span>
+            <span>RECC</span>
+            <span>TrustMark</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -203,7 +233,7 @@
         <p>Images chosen from free-use photo sources for concept work.</p>
       </div>
     </div>
-    <div class="container footer-bottom"><span>Unofficial concept redesign for demonstration purposes only.</span><span>v0.6 · 2026</span></div>
+    <div class="container footer-bottom"><span>Unofficial concept redesign for demonstration purposes only.</span><span>v0.7 · 2026</span></div>
   </footer>
 
   <script src="script.js"></script>
