@@ -698,3 +698,40 @@ body.header-has-scrolled .concept-bar{
     animation:none!important;
   }
 }
+
+
+/* v0.12 — client-ready content polish only */
+.standards-card{
+  padding:34px;
+}
+.standards-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:20px;
+}
+.standards-list span{
+  display:flex;
+  align-items:center;
+  min-height:54px;
+  padding:0 16px;
+  border:1px solid rgba(24,48,40,.10);
+  border-radius:12px;
+  background:rgba(255,255,255,.58);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.03em;
+  color:#20332d;
+}
+.standards-card > p{
+  margin:0;
+  color:#66766f;
+  line-height:1.6;
+}
+.footer-grid-final{
+  grid-template-columns:1.35fr .7fr .7fr;
+}
+@media(max-width:760px){
+  .standards-list{grid-template-columns:1fr 1fr}
+  .footer-grid-final{grid-template-columns:1fr}
+}
