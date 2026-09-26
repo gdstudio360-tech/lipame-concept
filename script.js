@@ -110,3 +110,99 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('resize', updateScrollEffects);
 updateScrollEffects();
+
+
+/* v0.11 — two-stage scroll-aware roller header */
+const siteHeader = document.querySelector('.site-header');
+const conceptBar = document.querySelector('.concept-bar');
+
+let lastHeaderScrollY = Math.max(window.scrollY, 0);
+let headerDirectionDistance = 0;
+let headerLastDirection = null;
+
+function setHeaderState() {
+  if (!siteHeader) return;
+
+  const y = Math.max(window.scrollY, 0);
+  const delta = y - lastHeaderScrollY;
+  const mobileMenuOpen = nav && nav.classList.contains('open');
+
+  if (y <= 18) {
+    document.body.classList.remove('header-has-scrolled');
+    siteHeader.classList.remove('header-compact', 'header-hidden', 'header-returning');
+    headerDirectionDistance = 0;
+    headerLastDirection = null;
+    lastHeaderScrollY = y;
+    return;
+  }
+
+  document.body.classList.add('header-has-scrolled');
+  siteHeader.classList.add('header-compact');
+
+  if (mobileMenuOpen) {
+    siteHeader.classList.remove('header-hidden');
+    lastHeaderScrollY = y;
+    return;
+  }
+
+  const direction = delta > 0 ? 'down' : delta < 0 ? 'up' : headerLastDirection;
+
+  if (direction && direction !== headerLastDirection) {
+    headerDirectionDistance = 0;
+    headerLastDirection = direction;
+  }
+
+  headerDirectionDistance += Math.abs(delta);
+
+  /* A small hysteresis prevents jitter from trackpads / momentum scrolling. */
+  if (direction === 'down' && y > 150 && headerDirectionDistance > 26) {
+    siteHeader.classList.remove('header-returning');
+    siteHeader.classList.add('header-hidden');
+    headerDirectionDistance = 0;
+  }
+
+  if (direction === 'up' && headerDirectionDistance > 10) {
+    const wasHidden = siteHeader.classList.contains('header-hidden');
+    siteHeader.classList.remove('header-hidden');
+
+    if (wasHidden) {
+      siteHeader.classList.remove('header-returning');
+      void siteHeader.offsetWidth;
+      siteHeader.classList.add('header-returning');
+      window.setTimeout(() => siteHeader.classList.remove('header-returning'), 480);
+    }
+
+    headerDirectionDistance = 0;
+  }
+
+  lastHeaderScrollY = y;
+}
+
+let headerTicking = false;
+window.addEventListener('scroll', () => {
+  if (!headerTicking) {
+    window.requestAnimationFrame(() => {
+      setHeaderState();
+      headerTicking = false;
+    });
+    headerTicking = true;
+  }
+}, { passive:true });
+
+setHeaderState();
+
+if (menuBtn && nav && siteHeader) {
+  menuBtn.addEventListener('click', () => {
+    window.requestAnimationFrame(() => {
+      const open = nav.classList.contains('open');
+      siteHeader.classList.toggle('menu-active', open);
+      if (open) siteHeader.classList.remove('header-hidden');
+    });
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      siteHeader.classList.remove('menu-active');
+    });
+  });
+}

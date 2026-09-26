@@ -1,4 +1,4 @@
-# Lipame Concept Redesign — v0.9
+# Lipame Concept Redesign — v0.11
 
 Unofficial demo redesign.
 
@@ -25,10 +25,14 @@ Unofficial demo redesign.
 This is an unofficial concept redesign and is not affiliated with Lipame Ltd.
 This form is demo-only and collects no data.
 
-- v0.9 restores and strengthens scroll-linked animation, parallax, stagger reveals and hover motion.
+- v0.11 restores and strengthens scroll-linked animation, parallax, stagger reveals and hover motion.
 
-- v0.9 rebuilt the hero: shorter copy, dark glass enquiry form, simplified trust bar, stronger dark-to-light composition and reduced logo glow.
+- v0.11 rebuilt the hero: shorter copy, dark glass enquiry form, simplified trust bar, stronger dark-to-light composition and reduced logo glow.
 
-- v0.9 updates the hero headline to: "Cleaner Energy. Lower Bills." and simplifies the supporting subheading.
+- v0.11 updates the hero headline to: "Cleaner Energy. Lower Bills." and simplifies the supporting subheading.
 
-- v0.9 replaces the single accreditation screenshot with four separate logo images served from Lipame’s current public website: NICEIC, MCS Certified, RECC and TrustMark.
+- v0.11 replaces the single accreditation screenshot with four separate logo images served from Lipame’s current public website: NICEIC, MCS Certified, RECC and TrustMark.
+
+- v0.11 uses the four supplied accreditation logos as local assets and removes the accreditation heading, leaving a clean logo-only strip above the footer.
+
+- v0.11 adds a premium two-stage scroll-aware header: the demo bar collapses first, the main navigation becomes compact, then rolls upward when scrolling down and returns as a compact 'roller' when scrolling up. Returning to the top restores the full-size header.
