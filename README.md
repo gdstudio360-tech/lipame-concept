@@ -1,8 +1,9 @@
-# Lipame Concept Redesign — v0.3
+# Lipame Concept Redesign — v0.5
 
 Unofficial demo redesign.
 
 ## What changed
+- Added NICEIC, MCS Certified, RECC and TrustMark accreditation strip above the footer.
 - Updated the site to use the new transparent/neon Lipame logo with white outline and green back-glow.
 - Replaced the earlier artificial/AI-looking imagery with **free-use stock photos**.
 - Kept the original Lipame logo.
