@@ -3,6 +3,7 @@
 Unofficial demo redesign.
 
 ## What changed
+- Updated the site to use the new transparent/neon Lipame logo with white outline and green back-glow.
 - Replaced the earlier artificial/AI-looking imagery with **free-use stock photos**.
 - Kept the original Lipame logo.
 - Real contact details remain removed.
