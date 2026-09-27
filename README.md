@@ -41,3 +41,6 @@ This form is demo-only and collects no data.
 - Copy is now written as customer-facing website content.
 - Stock imagery is presented as general applications, not as verified Lipame project case studies.
 - The page remains noindex/nofollow and clearly marked as an unofficial demo.
+
+- v0.13 redesigns the Trusted Standards area into a single premium dark section with 4 logo cards and removes the separate accreditation strip below it.
+- The Services section background has been toned down to feel calmer and less bright.
